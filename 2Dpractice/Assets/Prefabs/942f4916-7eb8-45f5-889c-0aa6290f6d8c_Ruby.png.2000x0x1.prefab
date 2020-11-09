@@ -102,6 +102,7 @@ MonoBehaviour:
   speed: 5
   timeInvincible: 2
   projectilePrefab: {fileID: 8197547125322952563, guid: 9b285719ff6404195ade826c5ceaea82, type: 3}
+  collectEffect: {fileID: 7511372032367812071, guid: 2802b5f97d3774b64bcea1bc9da453b9, type: 3}
 --- !u!50 &-9150970504701485583
 Rigidbody2D:
   serializedVersion: 4

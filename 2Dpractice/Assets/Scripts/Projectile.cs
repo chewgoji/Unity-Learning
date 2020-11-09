@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
+    public ParticleSystem hittingEffect;
+  
     // Start is called before the first frame update
     void Awake()
     {
@@ -37,6 +39,10 @@ public class Projectile : MonoBehaviour
         }
 
         Destroy(gameObject);
+        
+        Instantiate(hittingEffect, transform.position, transform.rotation);
+       
+        
     }
 
 }

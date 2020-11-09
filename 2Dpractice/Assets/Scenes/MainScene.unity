@@ -222,7 +222,7 @@ Transform:
   m_Children:
   - {fileID: 2059541915}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &391040672
 PrefabInstance:
@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248536267293476088, guid: 623519f7eb9544cb782bd62568d0d9cb, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7248536267293476088, guid: 623519f7eb9544cb782bd62568d0d9cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -844,7 +844,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1643210256
 PrefabInstance:
@@ -9192,6 +9192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4285328468579738501, guid: 7c527209c98804f02938a2bd8729a1e9, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 7511372032367812071, guid: 2802b5f97d3774b64bcea1bc9da453b9, type: 3}
     - target: {fileID: 5904839519151385897, guid: 7c527209c98804f02938a2bd8729a1e9, type: 3}
       propertyPath: m_Name
       value: CollectibleHealth
@@ -9336,7 +9340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248536267293476088, guid: 623519f7eb9544cb782bd62568d0d9cb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7248536267293476088, guid: 623519f7eb9544cb782bd62568d0d9cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
