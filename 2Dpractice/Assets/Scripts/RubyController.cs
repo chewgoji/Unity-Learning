@@ -26,6 +26,10 @@ public class RubyController : MonoBehaviour
     float horizontal;
     float vertical;
 
+    AudioSource audioSource;
+    public AudioClip launchClip;
+    public AudioClip hitClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,8 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
      
     }
 
@@ -90,7 +96,6 @@ public class RubyController : MonoBehaviour
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
-
     }
 
     public void ChangeHealth(int amount)
@@ -103,6 +108,7 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            PlaySound(hitClip);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -117,5 +123,12 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+        PlaySound(launchClip);
+
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
