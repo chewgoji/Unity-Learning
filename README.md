@@ -1,4 +1,5 @@
-# 2D-learning
-starting with unity-2D
+Unity-Learning      
 
-here i come github
+Some project prototype
+
+with git hub version control
